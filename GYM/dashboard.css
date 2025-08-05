@@ -1,0 +1,178 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.dropbtn {
+    background: #222;
+    color: #ffd700;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background: #ffd700;
+    color: #222;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #222;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    z-index: 10;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+.dropdown-content a {
+    color: #ffd700;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    background: #222;
+    border-bottom: 1px solid #333;
+    transition: background 0.2s, color 0.2s;
+}
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+.dropdown-content a:hover {
+    background: #ffd700;
+    color: #222;
+}
+.dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
+    display: block;
+}
+body {
+    background: #181818;
+    color: #f8f8f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-navbar {
+    background: #222;
+    color: #fff;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.dashboard-navbar h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.dashboard-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-navbar a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+.dashboard-navbar a:hover {
+    color: #fff;
+}
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: rgba(30,30,30,0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+.profile-section, .calendar-section {
+    margin-bottom: 40px;
+}
+.profile-section h3, .calendar-section h3 {
+    color: #ffd700;
+    margin-bottom: 18px;
+}
+#profileForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 32px;
+    margin-bottom: 18px;
+}
+#profileForm label {
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color: #eee;
+}
+#profileForm input, #profileForm select {
+    margin-top: 6px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #222;
+    color: #ffd700;
+    font-size: 1em;
+}
+#profileForm button {
+    background: #d7263d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 28px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.2s;
+}
+#profileForm button:hover {
+    background: #a81d2b;
+}
+.profile-display {
+    background: #222;
+    border-radius: 8px;
+    padding: 18px 24px;
+    color: #ffd700;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+#calendar {
+    background: #222;
+    border-radius: 8px;
+    padding: 18px 24px;
+    min-height: 320px;
+    color: #ffd700;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+.calendar-table th, .calendar-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+}
+.calendar-table th {
+    background: #333;
+    color: #ffd700;
+}
+.calendar-table td {
+    background: #222;
+    color: #fff;
+}

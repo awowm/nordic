@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sison Strength</title>
+    <link rel="stylesheet" href="gym.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="gym.js" defer></script>
+</head>
+<body>
+
+<div class="main-header">
+  <h1>Sison Strength</h1>
+</div>
+
+
+
+<div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#" class="nav-btn" onclick="toggleLoginPopup()"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="#" class="nav-btn" onclick="toggleRegisterPopup()"><i class="fas fa-user-plus"></i> Register</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="text-content">
+    <h1>
+        Welcome to Sison Strength
+    </h1>
+    <div class="description">
+    <p>
+        Sison Strength is a gym that offers a variety of fitness programs and services to help you achieve your health and wellness goals. Whether you're looking to build strength, improve your endurance, or just stay active, we have something for everyone.
+    </p>
+    </div>
+</div>
+
+<!-- Popup Overlay for Login/Register -->
+<!-- Login Popup -->
+<div id="loginPopup" class="overlay-container">
+    <div class="popup-box">
+        <h2 style="color: #d7263d;">Login</h2>
+        <form class="form-container" id="loginForm">
+            <label class="form-label" for="login-username">Email:</label>
+            <input class="form-input" type="email" placeholder="Enter Your Email" id="login-username" name="login-username" required>
+
+            <label class="form-label" for="login-password">Password:</label>
+            <input class="form-input" type="password" placeholder="Enter Your Password" id="login-password" name="login-password" required>
+
+            <button class="btn-submit" type="submit">Login</button>
+        </form>
+        <button class="btn-close-popup" onclick="toggleLoginPopup()">Close</button>
+    </div>
+</div>
+
+<!-- Register Popup -->
+<div id="registerPopup" class="overlay-container">
+    <div class="popup-box">
+        <h2 style="color: #d7263d;">Register</h2>
+        <form class="form-container">
+            <label class="form-label" for="reg-name">Name:</label>
+            <input class="form-input" type="text" placeholder="Enter Your Name" id="reg-name" name="reg-name" required>
+
+            <label class="form-label" for="reg-email">Email:</label>
+            <input class="form-input" type="email" placeholder="Enter Your Email" id="reg-email" name="reg-email" required>
+
+            <label class="form-label" for="reg-gender">Gender:</label>
+            <select class="form-input" id="reg-gender" name="reg-gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label class="form-label" for="reg-phone">Phone Number:</label>
+            <input class="form-input" type="tel" placeholder="Enter Your Phone Number" id="reg-phone" name="reg-phone" required>
+
+            <label class="form-label" for="reg-password">Password:</label>
+            <input class="form-input" type="password" placeholder="Enter Password" id="reg-password" name="reg-password" required>
+
+            <label class="form-label" for="reg-confirm-password">Confirm Password:</label>
+            <input class="form-input" type="password" placeholder="Confirm Password" id="reg-confirm-password" name="reg-confirm-password" required>
+
+            <button class="btn-submit" type="submit">Register</button>
+        </form>
+        <button class="btn-close-popup" onclick="toggleRegisterPopup()">Close</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Sison Strength</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="dashboard-navbar">
+        <h2>Sison Strength Admin Dashboard</h2>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-bars"></i> Menu</button>
+            <div class="dropdown-content">
+                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log-out</a>
+                <a href="#users-section"><i class="fas fa-users"></i> Users</a>
+                <a href="#schedule-section"><i class="fas fa-calendar"></i> Schedules</a>
+                <a href="#" id="resetBtn" style="color:#d7263d;"><i class="fas fa-trash-alt"></i> Reset All Users</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="users-section" class="profile-section">
+            <h3>Registered Users</h3>
+            <button id="downloadCsvBtn" style="margin-bottom:12px;"><i class="fas fa-file-csv"></i> Download CSV</button>
+            <div id="usersList"></div>
+        </section>
+        <section id="schedule-section" class="calendar-section">
+            <h3>All Schedules / Calendar</h3>
+            <div id="adminCalendar"></div>
+        </section>
+    </main>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

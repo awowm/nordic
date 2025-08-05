@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+          "width=device-width, initial-scale=1.0">
+    <title>Popup Form</title>
+    <link rel="stylesheet" href="sampleme.css">
+</head>
+
+<body>
+
+    <button class="btn-open-popup" onclick="togglePopup()">
+      Open Popup Form
+      </button>
+
+    <div id="popupOverlay" 
+         class="overlay-container">
+        <div class="popup-box">
+            <h2 style="color: green;">Popup Form</h2>
+            <form class="form-container">
+                <label class="form-label" 
+                       for="name">
+                  Username:
+                  </label>
+                <input class="form-input" type="text" 
+                       placeholder="Enter Your Username" 
+                       id="name" name="name" required>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Enter Your Email"
+                       id="email" 
+                       name="email" required>
+
+                <button class="btn-submit" 
+                        type="submit">
+                  Submit
+                  </button>
+            </form>
+
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()">
+              Close
+              </button>
+        </div>
+    </div>
+    <script>
+        function togglePopup() {
+            const popupOverlay = document.getElementById('popupOverlay');
+            popupOverlay.classList.toggle('active');
+        }
+</script>   
+</body>
+
+</html>
